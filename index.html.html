@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Managing System</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="mainStyle.css"/>
+</head>
+<body>
+    <header class="bg-dark mb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <nav class="navbar justify-content-between">
+                        <div id="title">
+                        <a class="navbar-brand">Stock List</a>
+                        </div>
+                        <form class="form-inline"> 
+                        </form>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <header class="heading">    
+        <h1 style="text-align: center;">Stock Listing Page</h1>
+        <form id="item_list">
+            <button type="button"
+                   id="item_submit">Add Item 
+            </button>
+            <button type="button"
+                    id="save_item" 
+                    style="display: none;"> Save Task
+            </button>
+            &nbsp; &nbsp;
+            <input type="text"
+                   id="item_input"
+                   placeholder="Stock item name please!!" 
+            /> 
+            <input type="hidden" id="save_index"> 
+            &nbsp; &nbsp;  
+            <button type="button" 
+                    id="deleteall_item">Delete All
+            </button>  
+        </form>
+    </header>
+    <main>
+        <section class="item_list">
+            <div class="container">
+            <h2>Items-List :</h2>
+            <div id="items">
+            </div>
+            </div>
+        </section>
+    </main>
+    <script src="mainJs.js"></script>
+</body>
+</html>
